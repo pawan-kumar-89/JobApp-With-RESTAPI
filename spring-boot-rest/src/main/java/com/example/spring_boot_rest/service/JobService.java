@@ -28,6 +28,8 @@ public class JobService {
     }
 
     public JobPost returnJob(int postId) {
+
+       //int num =10/0; this is for afterthrowing aspect
         return repo.findById(postId).orElse(new JobPost());
     }
 
